@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#0A2342">
+  <meta name="description" content="三友物流が自社で開発した「従業員ファーストシステム」のご紹介。専用アプリから、体調や気持ち、事故やヒヤリの報告をボタンで選ぶだけで伝えられます。">
+  <title>従業員ファーストシステムとは？｜三友物流 一宮営業所・豊田営業所</title>
+  <script>
+    const APPLY_URL = 'https://forms.gle/9XFTZcqSZX7ciFRs6';
+    const GA_ID = 'G-REPLACE_ME';
+
+    if (GA_ID !== 'G-REPLACE_ME') {
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function(){dataLayer.push(arguments);};
+      gtag('js', new Date());
+      gtag('config', GA_ID);
+      const gaScript = document.createElement('script');
+      gaScript.async = true;
+      gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(GA_ID);
+      document.head.appendChild(gaScript);
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('[data-cta="apply_web"]').forEach(function(button) {
+        button.href = APPLY_URL;
+        button.target = '_blank';
+        button.rel = 'noopener';
+      });
+      document.querySelectorAll('[data-cta]').forEach(function(button) {
+        button.addEventListener('click', function() {
+          if (typeof window.gtag !== 'function') return;
+          gtag('event', 'apply_click', { method: 'web', page: 'system' });
+        });
+      });
+    });
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800;900&amp;display=swap" rel="stylesheet">
+  <style>
+    :root{--navy:#0A2342;--navy2:#06182f;--orange:#E07000;--yellow:#FFB800;--pale:#F3F7FC;--ink:#142033;--muted:#596575;--line:#D9E2EC;--green:#E6F4EA;--pink:#FDE8EA;--chat:#E9EDF3;--mine:#D7E3F8}
+    *,*::before,*::after{box-sizing:border-box}
+    html{background:#dce4ec}
+    body{margin:0;color:var(--ink);background:#dce4ec;font-family:"Noto Sans JP",sans-serif;font-size:15px;line-height:1.85;-webkit-font-smoothing:antialiased}
+    img{display:block;width:100%;height:auto}
+    a{color:inherit}
+    h1,h2,h3,p,ul{margin-top:0}
+    .page{width:100%;max-width:520px;margin:0 auto;overflow:hidden;background:#fff;box-shadow:0 0 46px rgba(0,0,0,.13)}
+    .topbar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 18px;border-bottom:1px solid var(--line);background:#fff}
+    .topbar img{width:150px}
+    .topbar a{font-size:13px;font-weight:800;color:var(--navy);text-decoration:none;white-space:nowrap}
+    .intro{padding:52px 22px 46px;color:#fff;background:linear-gradient(160deg,var(--navy) 0%,var(--navy2) 100%)}
+    .eyebrow{display:flex;align-items:center;gap:10px;margin:0 0 12px;color:var(--orange);font-size:14px;font-weight:900;letter-spacing:.08em}
+    .eyebrow::before{content:"";width:28px;height:4px;background:var(--orange)}
+    .intro h1{margin:0 0 18px;font-size:clamp(30px,8.6vw,42px);font-weight:900;font-feature-settings:"palt";line-height:1.25;letter-spacing:-.05em}
+    .intro h1 em{display:block;color:#ff8a18;font-style:normal}
+    .intro p{margin:0;font-size:16px;line-height:2}
+    .points{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:26px}
+    .points div{padding:12px 6px;border:1px solid rgba(255,255,255,.35);border-radius:8px;text-align:center;font-size:12px;font-weight:700;line-height:1.5}
+    .points strong{display:block;color:#ffb35c;font-size:19px;font-weight:900}
+    .section{padding:64px 22px}
+    .section--pale{background:var(--pale)}
+    .title{margin:0 0 16px;color:var(--navy);font-size:clamp(26px,7.4vw,34px);font-weight:900;font-feature-settings:"palt";line-height:1.3;letter-spacing:-.04em}
+    .lead{margin:0 0 26px;font-size:16px;line-height:2}
+    .tag{display:inline-block;margin:0 0 14px;padding:3px 12px;border-radius:999px;color:#fff;background:var(--orange);font-size:13px;font-weight:900}
+    .phone{max-width:330px;margin:0 auto;padding:12px;border-radius:34px;background:#1b2433;box-shadow:0 20px 44px rgba(10,35,66,.28)}
+    .screen{overflow:hidden;border-radius:24px;background:var(--chat)}
+    .screen__bar{padding:12px 16px;color:#fff;background:var(--navy);font-size:14px;font-weight:800}
+    .chat{display:flex;flex-direction:column;gap:10px;padding:16px 12px 14px}
+    .msg{max-width:82%;padding:10px 13px;border-radius:14px;background:#fff;font-size:13.5px;line-height:1.7;box-shadow:0 1px 2px rgba(0,0,0,.06)}
+    .msg--me{align-self:flex-end;background:var(--mine);font-weight:700}
+    .chips{display:flex;flex-wrap:wrap;gap:6px;padding:0 12px 14px}
+    .chips span{padding:7px 12px;border:1px solid #cfd8e3;border-radius:999px;background:#fff;font-size:12.5px;font-weight:700}
+    .menu{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;padding:10px;background:#f7f8fa}
+    .menu div{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:78px;padding:16px 2px 8px;border-radius:8px;background:#eceff3;font-size:11px;font-weight:700;line-height:1.35;text-align:center}
+    .menu .ic{font-size:22px;line-height:1;margin-bottom:5px}
+    .menu .on1{background:var(--green)}
+    .menu .on2{background:var(--pink)}
+    .menu .dev::after{content:"開発中";position:absolute;top:4px;right:4px;padding:0 5px;border-radius:999px;color:#fff;background:#E8590C;font-size:9px;line-height:1.6}
+    .caption{margin:14px 0 0;color:var(--muted);font-size:12.5px;text-align:center}
+    .note{margin:26px 0 0;padding:18px;border-left:5px solid var(--orange);background:#fff;font-size:15px}
+    .note strong{color:var(--navy)}
+    .dev-msg{margin:26px 0 0;padding:22px 18px;border-radius:10px;color:#fff;background:var(--navy);font-size:17px;font-weight:900;line-height:1.7;text-align:center}
+    .cta{padding:48px 22px 56px;color:#fff;background:var(--navy);text-align:center}
+    .cta p{margin:0 0 18px;font-size:18px;font-weight:900;line-height:1.6}
+    .button{display:flex;align-items:center;justify-content:center;min-height:58px;width:100%;padding:14px 18px;border:2px solid var(--navy);border-radius:8px;color:var(--navy);background:var(--yellow);box-shadow:0 9px 24px rgba(0,0,0,.2);font-size:17px;font-weight:900;text-decoration:none}
+    .button--back{margin-top:12px;border-color:#fff;color:#fff;background:transparent;box-shadow:none;font-size:15px}
+    .footer{padding:34px 22px 40px;text-align:center;background:#fff}
+    .footer img{width:190px;margin:0 auto 14px}
+    .footer strong{display:block}.footer address{font-style:normal}
+    .footer__office{margin-top:10px}.footer__office span{display:block;font-weight:700;font-size:.92em}
+      .footer__privacy{margin:18px 0 0;font-size:13px}.footer__privacy a{color:#596575}
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="topbar"><img src="img/logo.png" alt="三友物流株式会社 SINCE 1915"><a href="index.html">‹ 求人ページへ戻る</a></div>
+
+    <header class="intro">
+      <p class="eyebrow">自社開発のしくみ</p>
+      <h1>従業員ファースト<br>システムとは？<em>働く人の声を、<br>まっすぐ届ける。</em></h1>
+      <p>三友物流が自社で開発した、働く人のためのしくみです。一宮・豊田の両営業所で使っています。スマートフォンの専用アプリから、ボタンを選ぶだけで使えます。</p>
+      <div class="points"><div><strong>週1回</strong>2〜3分の<br>アンケート</div><div><strong>ボタン</strong>で選ぶ<br>だけ</div><div><strong>数分</strong>で<br>報告が完了</div></div>
+    </header>
+
+    <section class="section">
+      <p class="tag">できること ①</p>
+      <h2 class="title">今週の体調や気持ちを、<br>ボタンで伝える</h2>
+      <p class="lead">週に1回、2〜3分。体調や疲れ、業務量、気持ちの状態を、ボタンを選んで答えます。残業や、休みの日の代わりの出勤ができるかどうかも伝えられます。</p>
+      <div class="phone"><div class="screen">
+        <div class="screen__bar">専用アプリ（イメージ）</div>
+        <div class="chat">
+          <div class="msg msg--me">アンケート</div>
+          <div class="msg">📋 今週のアンケートを開始します。<br>（全4問・ボタンで選択するだけです）<br><br>💪 今週の体力・体調はいかがですか？</div>
+          <div class="msg msg--me">非常に良い</div>
+          <div class="msg">🌙 残業の意欲はありますか？</div>
+        </div>
+      </div></div>
+      <p class="caption">※画面はイメージです。</p>
+      <div class="note"><strong>届いた声は、仕事の割り振りに。</strong><br>残業や代わりの出勤を決めるときの参考にしています。面と向かって言いにくいことも、営業所の管理者へ届きます。</div>
+    </section>
+
+    <section class="section section--pale">
+      <p class="tag">できること ②</p>
+      <h2 class="title">事故やヒヤリの報告も、<br>アプリで数分</h2>
+      <p class="lead">事務所へ戻って紙に手書きする必要はありません。案内に沿って選んで進むだけで、そのまま管理者へ届きます。</p>
+      <div class="phone"><div class="screen">
+        <div class="screen__bar">専用アプリ（イメージ）</div>
+        <div class="chat">
+          <div class="msg msg--me">車両事故</div>
+          <div class="msg">🚗 車両事故報告を開始します。<br>（全13ステップ）<br><br>【1/13】📅 発生日を選んでください。</div>
+          <div class="msg msg--me">11/9</div>
+          <div class="msg">発生日：11月9日<br><br>【2/13】⏰ 発生時刻は午前・午後どちらですか？</div>
+        </div>
+        <div class="chips"><span>🌅 午前（AM）</span><span>🌇 午後（PM）</span><span>✕ キャンセル</span></div>
+      </div></div>
+      <p class="caption">※画面はイメージです。</p>
+    </section>
+
+    <section class="section">
+      <p class="tag">これから</p>
+      <h2 class="title">使いやすい形に、<br>今も育てています</h2>
+      <p class="lead">アプリのメニューから、使いたい機能を選びます。</p>
+      <div class="phone"><div class="screen">
+        <div class="screen__bar">メニュー（イメージ）</div>
+        <div class="menu">
+          <div class="dev"><span class="ic">📅</span>シフト確認</div>
+          <div class="dev"><span class="ic">🏠</span>欠勤連絡</div>
+          <div class="on1"><span class="ic">📝</span>週次<br>アンケート</div>
+          <div class="dev"><span class="ic">⭐</span>評価確認</div>
+          <div class="dev"><span class="ic">💬</span>面談・<br>満足度</div>
+          <div class="on2"><span class="ic">🚨</span>事故・<br>トラブル</div>
+          <div class="dev"><span class="ic">🏢</span>ベンダー<br>報告</div>
+          <div class="dev"><span class="ic">📋</span>欠勤ルール</div>
+        </div>
+      </div></div>
+      <p class="caption">※画面はイメージです。「開発中」の機能は準備を進めています。</p>
+      <p class="dev-msg">ほかにも従業員の皆さんが<br>快適になるようなシステムを<br>随時開発中です！</p>
+    </section>
+
+    <section class="cta" aria-label="応募案内">
+      <p>声が届く職場で、<br>はたらいてみませんか。</p>
+      <a class="button" href="index.html#web-apply" data-cta="apply_web">WEBで応募する（24時間受付）</a>
+      <a class="button button--back" href="index.html">求人ページへ戻る</a>
+    </section>
+
+    <footer class="footer"><img src="img/logo.png" alt="三友物流株式会社 SINCE 1915" loading="lazy"><strong>三友物流株式会社</strong><div class="footer__office"><span>一宮営業所</span><address>愛知県一宮市大和町氏永字仲林140-1</address></div><div class="footer__office"><span>豊田営業所</span><address>愛知県豊田市大島町錦25</address></div><p class="footer__privacy"><a href="privacy.html">個人情報の取扱い</a></p></footer>
+  </div>
+</body>
+</html>
