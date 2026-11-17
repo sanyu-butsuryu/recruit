@@ -9,7 +9,7 @@
   <title>ルート配送ドライバー募集｜三友物流 一宮営業所・豊田営業所</title>
   <script>
     const APPLY_URL = 'https://forms.gle/9XFTZcqSZX7ciFRs6';
-    const GA_ID = 'G-REPLACE_ME';
+    const GA_ID = 'G-PP3Y7X6LWT';
 
     if (GA_ID !== 'G-REPLACE_ME') {
       window.dataLayer = window.dataLayer || [];
@@ -34,7 +34,8 @@
         button.addEventListener('click', function() {
           if (typeof window.gtag !== 'function') return;
           const method = button.dataset.cta === 'apply_web' ? 'web' : 'tel';
-          gtag('event', 'apply_click', { method: method });
+          const office = button.dataset.office || '';
+          gtag('event', method === 'web' ? 'apply_web_click' : 'apply_tel_click', { method: method, office: office });
         });
       });
     });
